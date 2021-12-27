@@ -17,6 +17,10 @@ var newbeeSwiper = new Swiper('.swiper-container', {
     }
 })
 
+var href = window.location.href;
+if(href.indexOf('/index') == -1) {
+   $('#nav .shop-name').css('display', 'none');
+}
 $('.all-sort-list > .item').hover(function () {
     var eq = $('.all-sort-list > .item').index(this),				//获取当前滑过是第几个元素
         h = $('.all-sort-list').offset().top,						//获取当前下拉菜单距离窗口多少像素

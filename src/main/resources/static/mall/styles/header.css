@@ -161,7 +161,9 @@
     background-position: center;
     margin-top: 10px;
 }
-
+#nav .shop-name {
+    display: flex;
+}
 #nav .banner_x .icon-search {
     width: 100px;
     text-indent: -10000px;
